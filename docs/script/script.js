@@ -1,12 +1,6 @@
-// Espera a que todo el HTML esté cargado
 document.addEventListener('DOMContentLoaded', () => {
 
-  // =========================================================
-  // --- 1. LÓGICA DE TRADUCCIÓN DE IDIOMAS ---
-  // =========================================================
-
   const traducciones = {
-    // ---- ESPAÑOL ----
     'es': {
       'nav-inicio': 'Inicio',
       'nav-proyectos': 'Proyectos',
@@ -16,31 +10,28 @@ document.addEventListener('DOMContentLoaded', () => {
       'nav-contacto': 'Contacto',
       'hero-saludo': 'HOLA, SOY',
       'hero-nombre': 'SARA NOEMÍ BAÑUELOS PÉREZ',
-      'hero-rol': 'DESARROLLADORA FULL-STACK',
-      'hero-desc': 'Apasionada por crear experiencias digitales limpias, funcionales y con un toque creativo. Me gusta trabajar en proyectos donde el diseño y el código se combinan con propósito.',
+      'hero-rol': 'DESARROLLADORA',
+      'hero-desc': 'Apasionada por crear experiencias digitales limpias y funcionales. Disfruto trabajar en proyectos donde el código, el diseño y la organización se integran para crear soluciones claras y bien estructuradas.',
       'hero-cv': 'Descargar CV',
       'hero-proyectos': 'Ver Proyectos',
       'proj-titulo': 'Proyectos Principales',
       'proj-tech': 'Tecnologías:',
       'proj-tools': 'Herramientas:',
-      // 'proj1-titulo': 'Aplicación de Encuestas sobre Experiencia en el Cine', // Esta key ya no existe en tu HTML
-      // 'proj1-desc': '...',
       'proj2-titulo': 'Proyecto de Diseño de Aplicación',
       'proj2-desc': 'Diseño de interfaz para una aplicación móvil, enfocado en la usabilidad y la coherencia visual. Se elaboraron todas las pantallas y flujos de navegación mediante Figma.',
       'proj3-titulo': 'Sitio Web de Banda Musical',
       'proj3-desc': 'Sitio web informativo diseñado para una banda musical, con secciones dedicadas a los integrantes, su música e historia del grupo. Presenta un diseño atractivo y adaptable para distintos dispositivos.',
       'skills-titulo': 'Habilidades Técnicas',
       'skills-lang-h3': 'Lenguajes',
-      'skills-lang-p': 'C++, Java, Kotlin, HTML, CSS, JavaScript',
+      'skills-lang-p': 'C<br> Java <br>Kotlin<br> JavaScript <br>CSS<br>HTML',
       'skills-db-h3': 'Bases de Datos',
       'skills-db-p': 'MySQL',
       'skills-tools-h3': 'Herramientas',
-      'skills-tools-p': 'GitHub, GitLab, NetBeans, Packet Tracer, Figma, Jira, Trello, Android Studio',
+      'skills-tools-p': 'GitHub<br> GitLab<br> NetBeans<br> Packet Tracer <br>Figma<br> Jira <br>Trello<br> Android Studio<br> VS code',
       'skills-learn-h3': 'En aprendizaje',
-      'skills-learn-p': 'React, Node.js, Python',
+      'skills-learn-p': 'React<br> Node.js<br> Python',
       'about-titulo': 'Sobre mí',
-      // ARREGLO: <strong> está ahora DENTRO del diccionario
-      'about-p': 'Soy una persona con habilidades de liderazgo, comunicación efectiva y gusto por la tecnología. Me considero perfeccionista y enfocada en los detalles, lo que me ayuda a entregar proyectos de calidad. A lo largo de mi formación en Tecnologías de la Información, he disfrutado materias como <strong>Programación Orientada a Objetos, Bases de Datos, Análisis y Diseño de Software</strong> y <strong>Aplicaciones Web</strong>, las cuales fortalecen mi pasión por el desarrollo de software.',
+      'about-p': 'Soy estudiante de <strong> Ingeniería en Tecnologías de la Información e Innovación Digital</strong>, con interés en el desarrollo Front-End y el diseño de interfaces. Me gusta trabajar en proyectos donde el diseño, el código y la organización se combinan para crear soluciones claras y funcionales. He participado en proyectos en equipo donde he apoyado en la organización de tareas y la estructuración de ideas, así como en la definición de soluciones viables, además de contribuir en el diseño y desarrollo de interfaces. Me considero una persona responsable, detallista y en constante aprendizaje, con el objetivo de seguir creciendo profesionalmente y aportar valor en proyectos reales de software.',
       'cert-titulo': 'Certificaciones y Reconocimientos',
       'cert-cisco-titulo': 'Cursos y Certificaciones Cisco',
       'cert-li-1': 'Introduction to Networks',
@@ -49,12 +40,15 @@ document.addEventListener('DOMContentLoaded', () => {
       'cert-li-4': 'Conciencia digital (Cisco)',
       'cert-li-5': 'HTML Essentials(Cisco)',
       'cert-li-6': 'CSS Essentials (Cisco)',
-      'footer-copy': '© 2025 Sara Bañuelos ·',
-      'footer-li': 'LinkedIn',
-      'footer-gm': 'sara.banuelosp17@gmail.com', // ARREGLO: Actualizado
-      'footer-gh': 'GitHub'
+      'contact-titulo': 'Hablemos',
+      'contact-desc': 'Abierta a nuevas oportunidades laborales. Puedes contactarme a través del siguiente formulario o mediante mis redes sociales.',
+      'contact-name': 'Nombre',
+      'contact-phone': 'Teléfono',
+      'contact-msg': 'Mensaje',
+      'contact-submit': 'Enviar',
+      'contact-social': 'Mis Redes',
+      'footer-copy': '© 2025 Sara Bañuelos ·'
     },
-    // ---- INGLÉS ----
     'en': {
       'nav-inicio': 'Home',
       'nav-proyectos': 'Projects',
@@ -63,8 +57,9 @@ document.addEventListener('DOMContentLoaded', () => {
       'nav-cert': 'Certifications',
       'nav-contacto': 'Contact',
       'hero-saludo': 'HELLO, I AM',
-      'hero-rol': 'FULL-STACK DEVELOPER',
-      'hero-desc': 'Passionate about creating clean, functional, and creative digital experiences. I enjoy working on projects where design and code combine with purpose.',
+      'hero-nombre': 'SARA NOEMÍ BAÑUELOS PÉREZ',
+      'hero-rol': 'DEVELOPER',
+      'hero-desc': 'Passionate about creating clean and functional digital experiences. I enjoy working on projects where code, design, and organization integrate to create clear and well-structured solutions.',
       'hero-cv': 'Download CV',
       'hero-proyectos': 'View Projects',
       'proj-titulo': 'Main Projects',
@@ -73,15 +68,18 @@ document.addEventListener('DOMContentLoaded', () => {
       'proj2-titulo': 'Application Design Project',
       'proj2-desc': 'Interface design for a mobile application, focused on usability and visual consistency. All screens and navigation flows were developed using Figma.',
       'proj3-titulo': 'Music Band Website',
-      'proj3-desc': 'Informational website designed for a music band, with sections dedicated to the members, their music, and the group\'s history. It features an attractive and responsive design for different devices.',
+      'proj3-desc': 'Informational website designed for a music band, with sections dedicated to members, their music, and the group\'s history. Features an attractive and responsive design.',
       'skills-titulo': 'Technical Skills',
       'skills-lang-h3': 'Languages',
+      'skills-lang-p': 'C<br> Java <br>Kotlin<br> JavaScript <br>CSS<br>HTML',
       'skills-db-h3': 'Databases',
+      'skills-db-p': 'MySQL',
       'skills-tools-h3': 'Tools',
-      'skills-learn-h3': 'Currently Learning',
+      'skills-tools-p': 'GitHub<br> GitLab<br> NetBeans<br> Packet Tracer <br>Figma<br> Jira <br>Trello<br> Android Studio<br> VS code',
+      'skills-learn-h3': 'Learning',
+      'skills-learn-p': 'React<br> Node.js<br> Python',
       'about-titulo': 'About Me',
-      // ARREGLO: <strong> está ahora DENTRO del diccionario
-      'about-p': 'I am a person with leadership skills, effective communication, and a passion for technology. I consider myself a perfectionist focused on details, which helps me deliver quality projects. Throughout my education in Information Technologies, I have enjoyed subjects like <strong>Object-Oriented Programming, Databases, Software Analysis and Design</strong>, and <strong>Web Applications</strong>, which strengthen my passion for software development.',
+      'about-p': 'I am an <strong>Information Technology and Digital Innovation Engineering</strong> student, with an interest in Front-End development and interface design. I like working on projects where design, code, and organization combine to create functional solutions. I have participated in team projects supporting task organization and idea structuring, contributing to the design and development of interfaces. I consider myself a responsible, detail-oriented person, aiming to grow professionally and add value to software projects.',
       'cert-titulo': 'Certifications and Recognitions',
       'cert-cisco-titulo': 'Cisco Courses and Certifications',
       'cert-li-1': 'Introduction to Networks',
@@ -90,12 +88,15 @@ document.addEventListener('DOMContentLoaded', () => {
       'cert-li-4': 'Digital Awareness (Cisco)',
       'cert-li-5': 'HTML Essentials(Cisco)',
       'cert-li-6': 'CSS Essentials (Cisco)',
-      'footer-copy': '© 2025 Sara Bañuelos ·',
-      'footer-li': 'LinkedIn',
-      'footer-gm': 'sara.banuelosp17@gmail.com', // ARREGLO: Actualizado
-      'footer-gh': 'GitHub'
+      'contact-titulo': 'Let\'s Talk',
+      'contact-desc': 'Open to new job opportunities. You can contact me through the following form or via my social networks.',
+      'contact-name': 'Name',
+      'contact-phone': 'Phone',
+      'contact-msg': 'Message',
+      'contact-submit': 'Send',
+      'contact-social': 'Social Media',
+      'footer-copy': '© 2025 Sara Bañuelos ·'
     },
-    // ---- FRANCÉS ----
     'fr': {
       'nav-inicio': 'Accueil',
       'nav-proyectos': 'Projets',
@@ -104,25 +105,29 @@ document.addEventListener('DOMContentLoaded', () => {
       'nav-cert': 'Certifications',
       'nav-contacto': 'Contact',
       'hero-saludo': 'BONJOUR, JE SUIS',
-      'hero-rol': 'DÉVELOPPEUSE FULL-STACK',
-      'hero-desc': 'Passionnée par la création d’expériences numériques épurées, fonctionnelles et avec une touche créative. J’aime travailler sur des projets où le design et le code se combinent avec un objectif.',
+      'hero-nombre': 'SARA NOEMÍ BAÑUELOS PÉREZ',
+      'hero-rol': 'DÉVELOPPEUSE',
+      'hero-desc': 'Passionnée par la création d’expériences numériques épurées et fonctionnelles. J’aime travailler sur des projets où le code, le design et l’organisation s’intègrent pour créer des solutions claires.',
       'hero-cv': 'Télécharger CV',
       'hero-proyectos': 'Voir Projets',
       'proj-titulo': 'Projets Principaux',
       'proj-tech': 'Technologies:',
       'proj-tools': 'Outils:',
       'proj2-titulo': 'Projet de Conception d’Application',
-      'proj2-desc': 'Conception d’interface pour une application mobile, axée sur l’utilisabilité et la cohérence visuelle. Tous les écrans et flux de navigation ont été développés avec Figma.',
+      'proj2-desc': 'Conception d’interface pour une application mobile, axée sur l’utilisabilité. Tous les écrans et flux de navigation ont été développés avec Figma.',
       'proj3-titulo': 'Site Web de Groupe de Musique',
-      'proj3-desc': 'Site web informatif conçu pour un groupe de musique, avec des sections dédiées aux membres, à leur musique et à l’histoire du groupe. Il présente un design attrayant et adaptable à différents appareils.',
+      'proj3-desc': 'Site web informatif conçu pour un groupe de musique, avec des sections dédiées aux membres et à leur musique. Design attrayant et adaptable.',
       'skills-titulo': 'Compétences Techniques',
       'skills-lang-h3': 'Langages',
+      'skills-lang-p': 'C<br> Java <br>Kotlin<br> JavaScript <br>CSS<br>HTML',
       'skills-db-h3': 'Bases de données',
+      'skills-db-p': 'MySQL',
       'skills-tools-h3': 'Outils',
+      'skills-tools-p': 'GitHub<br> GitLab<br> NetBeans<br> Packet Tracer <br>Figma<br> Jira <br>Trello<br> Android Studio<br> VS code',
       'skills-learn-h3': 'En apprentissage',
+      'skills-learn-p': 'React<br> Node.js<br> Python',
       'about-titulo': 'À propos de moi',
-      // ARREGLO: <strong> está ahora DENTRO del diccionario
-      'about-p': 'Je suis une personne dotée de compétences en leadership, d’une communication efficace et d’un goût pour la technologie. Je me considère perfectionniste et axée sur les détails, ce qui m’aide à livrer des projets de qualité. Tout au long de ma formation en Technologies de l’Information, j’ai apprécié des matières comme la <strong>Programmation Orientée Objet, les Bases de Données, l’Analyse et la Conception de Logiciels</strong>, et les <strong>Applications Web</strong>, qui renforcent ma passion pour le développement de logiciels.',
+      'about-p': 'Je suis étudiante en <strong>Ingénierie des Technologies de l’Information et de l’Innovation Numérique</strong>, avec un intérêt pour le développement Front-End. J’aime travailler sur des projets où le design et le code se combinent pour créer des solutions fonctionnelles. J’ai participé à des projets d’équipe en soutenant l’organisation des tâches et le développement d’interfaces. Je me considère comme une personne responsable et minutieuse, cherchant à apporter de la valeur à des projets logiciels réels.',
       'cert-titulo': 'Certifications et Reconnaissances',
       'cert-cisco-titulo': 'Cours et Certifications Cisco',
       'cert-li-1': 'Introduction to Networks',
@@ -131,14 +136,17 @@ document.addEventListener('DOMContentLoaded', () => {
       'cert-li-4': 'Sensibilisation au numérique (Cisco)',
       'cert-li-5': 'HTML Essentials(Cisco)',
       'cert-li-6': 'CSS Essentials (Cisco)',
-      'footer-copy': '© 2025 Sara Bañuelos ·',
-      'footer-li': 'LinkedIn',
-      'footer-gm': 'sara.banuelosp17@gmail.com', // ARREGLO: Actualizado
-      'footer-gh': 'GitHub'
+      'contact-titulo': 'Parlons-en',
+      'contact-desc': 'Ouverte à de nouvelles opportunités. Vous pouvez me contacter via le formulaire suivant ou mes réseaux sociaux.',
+      'contact-name': 'Nom',
+      'contact-phone': 'Téléphone',
+      'contact-msg': 'Message',
+      'contact-submit': 'Envoyer',
+      'contact-social': 'Mes Réseaux',
+      'footer-copy': '© 2025 Sara Bañuelos ·'
     }
   };
 
-  // --- Lógica del Traductor (ARREGLADA Y SIMPLIFICADA) ---
   const botonesIdioma = document.querySelectorAll('.lang-btn');
   const elementosATraducir = document.querySelectorAll('[data-key]');
 
@@ -146,84 +154,48 @@ document.addEventListener('DOMContentLoaded', () => {
     elementosATraducir.forEach(elem => {
       const key = elem.dataset.key;
       const traduccion = traducciones[lang][key];
-      
       if (traduccion) {
-        // Esta sola línea maneja todo:
-        // - Pone texto simple en los enlaces (<a>)
-        // - Pone HTML (con <strong>) en el párrafo 'about-p'
-        elem.innerHTML = traduccion;
+        if (elem.tagName === 'INPUT' && elem.type === 'submit') {
+          elem.value = traduccion;
+        } else {
+          elem.innerHTML = traduccion;
+        }
       }
     });
 
-    // Actualiza el botón activo
     botonesIdioma.forEach(btn => {
-      btn.classList.remove('active');
-      if (btn.dataset.lang === lang) {
-        btn.classList.add('active');
-      }
+      btn.classList.toggle('active', btn.dataset.lang === lang);
     });
-
-    // Guarda la preferencia de idioma
     localStorage.setItem('idioma-preferido', lang);
   };
 
-  // Añade 'click' listener a cada botón de idioma
   botonesIdioma.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const lang = btn.dataset.lang;
-      traducirPagina(lang);
-    });
+    btn.addEventListener('click', () => traducirPagina(btn.dataset.lang));
   });
 
-  // Carga el idioma guardado al iniciar
-  const idiomaGuardado = localStorage.getItem('idioma-preferido');
-  if (idiomaGuardado) {
-    traducirPagina(idiomaGuardado);
-  }
+  const idiomaGuardado = localStorage.getItem('idioma-preferido') || 'es';
+  traducirPagina(idiomaGuardado);
 
-  // =========================================================
-  // --- 2. LÓGICA DEL MODAL DE CERTIFICADOS ---
-  // =========================================================
-  
+  // --- Lógica del Modal PDF ---
   const modal = document.getElementById('modal-pdf');
   const cerrarModal = document.querySelector('.modal-cerrar');
   const iframePdf = document.getElementById('pdf-viewer');
   const linksPdf = document.querySelectorAll('.link-pdf');
 
-  // Función para ABRIR el modal
-  const abrirModal = (e) => {
-    e.preventDefault();
-    const pdfUrl = e.currentTarget.href;
-    iframePdf.src = pdfUrl;
-    modal.classList.add('visible');
-  };
+  linksPdf.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      iframePdf.src = e.currentTarget.href;
+      modal.classList.add('visible');
+    });
+  });
 
-  // Función para CERRAR el modal
   const cerrar = () => {
     modal.classList.remove('visible');
-    iframePdf.src = ""; // Limpia el iframe para detener la carga
+    iframePdf.src = "";
   };
 
-  // Asigna el evento a cada enlace de certificado
-  linksPdf.forEach(link => {
-    link.addEventListener('click', abrirModal);
-  });
-
-  // Asigna el evento al botón de cerrar (la 'X')
   cerrarModal.addEventListener('click', cerrar);
-
-  // Cierra el modal si se hace clic en el fondo oscuro
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      cerrar();
-    }
-  });
-
-  // Cierra el modal con la tecla 'Escape'
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.classList.contains('visible')) {
-      cerrar();
-    }
-  });
-
+  modal.addEventListener('click', (e) => { if (e.target === modal) cerrar(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') cerrar(); });
 });
