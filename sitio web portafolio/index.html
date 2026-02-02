@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sara Bañuelos | Desarrolladora Full-stack</title>
+  <link rel="stylesheet" href="estilos/estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="script/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h3>Sara Bañuelos</h3>
+
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </label>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="#home" data-key="nav-inicio">Inicio</a></li>
+        <li><a href="#trabajo" data-key="nav-proyectos">Proyectos</a></li>
+        <li><a href="#skills" data-key="nav-habilidades">Habilidades</a></li>
+        <li><a href="#sobre-mi" data-key="nav-sobremi">Sobre mí</a></li>
+        <li><a href="#certificaciones" data-key="nav-cert">Certificaciones</a></li>
+        <li><a href="#contacto" data-key="nav-contacto">Contacto</a></li>
+      </ul>
+      
+      <div class="lang-selector">
+        <button data-lang="es" class="lang-btn active">ES</button>
+        <button data-lang="en" class="lang-btn">EN</button>
+        <button data-lang="fr" class="lang-btn">FR</button>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="portada">
+    <div class="texto">
+      <p class="saludo" data-key="hero-saludo">HOLA, SOY</p>
+      <h1 class="nombre" data-key="hero-nombre">SARA NOEMÍ BAÑUELOS PÉREZ</h1>
+      <h2 class="rol" data-key="hero-rol">DESARROLLADORA FULL-STACK</h2>
+      <p class="descripcion" data-key="hero-desc">
+        Apasionada por crear experiencias digitales limpias, funcionales y con un toque creativo. 
+        Me gusta trabajar en proyectos donde el diseño y el código se combinan con propósito.
+      </p>
+
+      <div class="botones">
+        <a href="certificados/cv_sara_banuelos.pdf" class="boton-transparente" target="_blank" data-key="hero-cv">Descargar CV</a>
+        <a href="#trabajo" class="boton-transparente" data-key="hero-proyectos">Ver Proyectos</a>
+      </div>
+    </div>
+
+    <div class="imagen">
+      <img src="imagenes/foto_formal.jpeg" alt="Foto de Sara Bañuelos">
+    </div>
+  </section>
+
+  <section id="trabajo">
+    <h2 data-key="proj-titulo">Proyectos Principales</h2>
+    <div class="fila mis-proyectos">
+
+      <div class="tarjeta">
+        <h3><a href="https://www.figma.com/proto/OSNV2s28CnwWsa8psuooGz/MazYummy?node-id=66-868&p=f&t=gPnMlZq0EtC9ZjjF-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=66%3A868" target="_blank" data-key="proj2-titulo">Proyecto de Diseño de Aplicación</a></h3>
+        <p data-key="proj2-desc">Diseño de interfaz para una aplicación móvil, enfocado en la usabilidad y la coherencia visual. Se elaboraron todas las pantallas y flujos de navegación mediante Figma.</p>
+        <p><strong data-key="proj-tools">Herramientas:</strong> Figma, Jira</p>
+      </div>
+
+      <div class="tarjeta">
+         <h3><a href="https://newjeans-kpop.netlify.app/" target="_blank" data-key="proj3-titulo">Sitio Web de Banda Musical</a></h3>
+        <p data-key="proj3-desc">Sitio web informativo diseñado para una banda musical, con secciones dedicadas a los integrantes, su música e historia del grupo. Presenta un diseño atractivo y adaptable para distintos dispositivos.</p>
+        <p><strong data-key="proj-tech">Tecnologías:</strong> HTML, CSS, JavaScript</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 data-key="skills-titulo">Habilidades Técnicas</h2>
+    <div class="fila mis-habilidades">
+      <div class="tarjeta"><h3 data-key="skills-lang-h3">Lenguajes</h3><p data-key="skills-lang-p">C++, Java, Kotlin, HTML, CSS, JavaScript</p></div>
+      <div class="tarjeta"><h3 data-key="skills-db-h3">Bases de Datos</h3><p data-key="skills-db-p">MySQL</p></div>
+      <div class="tarjeta"><h3 data-key="skills-tools-h3">Herramientas</h3><p data-key="skills-tools-p">GitHub, GitLab, NetBeans, Packet Tracer, Figma, Jira, Trello, Android Studio</p></div>
+      <div class="tarjeta"><h3 data-key="skills-learn-h3">En aprendizaje</h3><p data-key="skills-learn-p">React, Node.js, Python</p></div>
+    </div>
+  </section>
+
+  <section id="sobre-mi">
+    <h2 data-key="about-titulo">Sobre mí</h2>
+    <p data-key="about-p">
+      Soy una persona con habilidades de liderazgo, comunicación efectiva y gusto por la tecnología. 
+      Me considero perfeccionista y enfocada en los detalles, lo que me ayuda a entregar proyectos de calidad. 
+      A lo largo de mi formación en Tecnologías de la Información, he disfrutado materias como 
+      <strong>Programación Orientada a Objetos, Bases de Datos, Análisis y Diseño de Software</strong> y 
+      <strong>Aplicaciones Web</strong>, las cuales fortalecen mi pasión por el desarrollo de software.
+    </p>
+  </section>
+
+   <section id="certificaciones">
+    <h2 data-key="cert-titulo">Certificaciones y Reconocimientos</h2>
+    <div class="fila mis-certificados">
+      <div class="tarjeta">
+        <h3 data-key="cert-cisco-titulo">Cursos y Certificaciones Cisco</h3>
+        
+        <ul class="lista-certificados">
+          <li><a href="certificados/Conceptos básicos de redes.pdf" class="link-pdf" data-key="cert-li-1">Introduction to Networks</a></li>
+          <li><a href="certificados/Switching, Routing, and Wireless.pdf" class="link-pdf" data-key="cert-li-2">Switching, Routing and Wireless Essentials</a></li>
+          <li><a href="certificados/Using Computer and Mobile Devices.pdf" class="link-pdf" data-key="cert-li-3">Using Computer and Mobile Devices(Cisco)</a></li>
+          <li><a href="certificados/Conciencia digital.pdf" class="link-pdf" data-key="cert-li-4">Conciencia digital (Cisco)</a></li>
+          <li><a href="certificados/HTML_Essentials.pdf" class="link-pdf" data-key="cert-li-5">HTML Essentials(Cisco)</a></li>
+          <li><a href="certificados/CSS_Essentials.pdf" class="link-pdf" data-key="cert-li-6">CSS Essentials (Cisco)</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contacto">
+    <p>
+      <span data-key="footer-copy">© 2025 Sara Bañuelos ·</span> 
+      <a href="https://www.linkedin.com/in/sara-ba%C3%B1uelos-6b2087387?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" data-key="footer-li">LinkedIn</a> · 
+      <a href="mailto:sara.banuelosp17@gmail.com" data-key="footer-gm">sara.banuelosp17@gmail.com</a> · 
+      <a href="https://gitlab.com/bosspilot/bosspilot.git" target="_blank" data-key="footer-gh">GitHub</a>
+    </p>
+  </footer>
+
+  <div id="modal-pdf" class="modal-overlay">
+    <div class="modal-contenido">
+      <span class="modal-cerrar">&times;</span>
+      <iframe id="pdf-viewer" src="" frameborder="0"></iframe>
+    </div>
+  </div>
+</body>
+</html>
