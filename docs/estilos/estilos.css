@@ -1,8 +1,4 @@
-/* =========================================================
-    🌙 ESTILOS PRINCIPALES - PORTAFOLIO DARK
-    ========================================================= */
 
-/* ====== RESET Y BASE ====== */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,9 +17,6 @@ a {
   color: inherit;
 }
 
-/* =========================================================
-    🔹 HEADER Y MENÚ
-    ========================================================= */
 header {
   display: flex;
   justify-content: space-between;
@@ -41,7 +34,6 @@ header h3 {
   font-weight: 600;
 }
 
-/* ====== NAV (MENÚ PRINCIPAL) ====== */
 nav.menu {
   display: flex;
   align-items: center;
@@ -67,9 +59,6 @@ nav.menu ul li a:hover {
   color: #fff;
 }
 
-/* =========================================================
-    🌍 SUBMENÚ (Estilos originales, los dejamos)
-    ========================================================= */
 .submenu {
   position: relative;
 }
@@ -119,9 +108,6 @@ nav.menu ul li a:hover {
   display: block;
 }
 
-/* =========================================================
-    🍔 MENÚ HAMBURGUESA
-    ========================================================= */
 #menu-toggle {
   display: none;
 }
@@ -143,9 +129,6 @@ nav.menu ul li a:hover {
   transition: all 0.3s ease;
 }
 
-/* =========================================================
-    💫 PORTADA / HERO SECTION
-    ========================================================= */
 .portada {
   display: flex;
   justify-content: space-between;
@@ -186,7 +169,7 @@ nav.menu ul li a:hover {
   transform: scale(1.05);
 }
 
-/* Texto */
+
 .saludo {
   color: #ff6b00;
   font-weight: 600;
@@ -210,7 +193,7 @@ nav.menu ul li a:hover {
   line-height: 1.7;
 }
 
-/* Botones */
+
 .botones { display: flex; gap: 1rem; flex-wrap: wrap; }
 .boton, .boton-transparente {
   padding: 0.8rem 1.8rem;
@@ -225,9 +208,6 @@ nav.menu ul li a:hover {
 .boton-transparente:hover { background: #ff6b00; color: #fff; transform: translateY(-2px); }
 
 
-/* =========================================================
-    🧩 SECCIONES Y TARJETAS
-    ========================================================= */
 section {
   padding: 4rem 10%;
   border-top: 1px solid #1c1c25;
@@ -245,7 +225,7 @@ h2 {
   flex-wrap: wrap;
 }
 
-/* Espaciado interno de las tarjetas */
+
 .tarjeta {
   background: #11111a;
   border: 1px solid #1e1e28;
@@ -264,7 +244,6 @@ h2 {
   border-color: #ff6b00;
 }
 
-/* Estilo de los enlaces en los títulos de proyecto */
 .tarjeta h3 a {
   text-decoration: none;
   color: inherit;
@@ -276,9 +255,7 @@ h2 {
   text-decoration: underline;
 }
 
-/* =========================================================
-    ⚡ FOOTER
-    ========================================================= */
+
 footer {
   text-align: center;
   padding: 2rem;
@@ -293,12 +270,10 @@ footer a {
   transition: color 0.3s ease;
 }
 footer a:hover {
-  color: #ff6b00; /* ARREGLO: Color de hover consistente */
+  color: #ff6b00; 
 }
 
-/* =========================================================
-    🎞️ ANIMACIONES
-    ========================================================= */
+
 @keyframes fadeUp {
   0% { opacity: 0; transform: translateY(40px); }
   100% { opacity: 1; transform: translateY(0); }
@@ -313,11 +288,7 @@ footer a:hover {
 }
 
 
-/* =========================================================
-   NUEVOS ESTILOS (Traductor, Modal, Certificados)
-   ========================================================= */
 
-/* --- 🌐 TRADUCTOR DE IDIOMAS --- */
 .lang-selector {
   display: flex;
   gap: 0.5rem;
@@ -345,7 +316,6 @@ footer a:hover {
   border-color: #ff6b00;
 }
 
-/* --- 👁️ MODAL PARA PDFS --- */
 .modal-overlay {
   display: none;
   position: fixed;
@@ -400,11 +370,11 @@ footer a:hover {
   border-radius: 5px;
 }
 
-/* --- 📄 LISTA DE CERTIFICADOS --- */
+
 .lista-certificados {
   list-style: disc;
   padding-left: 1.5rem;
-  margin-top: 1rem; /* Ajustado para el 'gap' de la tarjeta */
+  margin-top: 1rem; 
 }
 .lista-certificados li {
   margin-bottom: 0.8rem;
@@ -422,10 +392,6 @@ footer a:hover {
   border-bottom-color: #ff6b00;
 }
 
-
-/* =========================================================
-    📱 RESPONSIVE DESIGN
-    ========================================================= */
 
 /* --- Pantallas medianas --- */
 @media (max-width: 1023px) {
@@ -514,7 +480,7 @@ footer a:hover {
     text-align: center;
   }
 
-  /* --- Ajuste Botones de Idioma para móvil --- */
+
   .lang-selector {
     margin-left: 0;
     margin-top: 1rem;
@@ -522,7 +488,6 @@ footer a:hover {
     width: 100%;
   }
 
-  /* Submenú dentro del menú móvil */
   .submenu-opciones {
     position: static;
     background: #1a1a20;
@@ -532,4 +497,135 @@ footer a:hover {
     background: #141418;
     border-radius: 6px;
   }
+ .contenedor-contacto {
+    flex-direction: column; 
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .enlaces-lateral {
+    align-items: center; /
+  }
 }
+
+form{
+
+ 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  width: 340px;
+}
+
+.input-group{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.contactar{
+  color: whitesmoke;
+  font-size: 35px;
+}
+
+label{
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+input, textarea{
+  padding: 17px 25px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  background-color: #11111a;
+  border: 3px solid #ff6b00;
+  color: #ffffff;
+  outline: none;
+}
+
+
+input::placeholder, textarea::placeholder{
+  color: #ffffff;
+}
+
+.btn{
+  font-size: 16px;
+  color: white;
+  border: 0;
+  border-radius: 25px;
+  background-color: #ff6b00;
+  box-shadow: 0 0 20px rgba(255, 107, 0, 0.4);
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: #e26308;
+}
+
+.cabecera-contacto {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+}
+
+.contactar {
+  font-size: 35px;
+  color: whitesmoke;
+  margin-bottom: 1rem;
+}
+
+.texto-contacto {
+  color: #bfbfbf;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+
+.contenedor-contacto {
+  display: flex;
+  justify-content: space-around; 
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+
+.enlaces-lateral {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.enlaces-lateral h3 {
+  color: white; 
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.enlaces-lateral a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.enlaces-lateral a:hover {
+  color: #ff6b00;
+}
+
+.icon-img {
+  width: 32px;
+  height: 32px;
+  margin-right: 15px;
+}
+
+
