@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sara Bañuelos | Desarrolladora Front-End</title>
+  <title>Sara Bañuelos | Desarrolladora</title>
   <link rel="stylesheet" href="estilos/estilos.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <script src="script/script.js" defer></script>
@@ -41,7 +41,7 @@
     <div class="texto">
       <p class="saludo" data-key="hero-saludo">HOLA, SOY</p>
       <h1 class="nombre" data-key="hero-nombre">SARA NOEMÍ BAÑUELOS PÉREZ</h1>
-      <h2 class="rol" data-key="hero-rol">DESARROLLADORA FRONT-END JUNIOR</h2>
+      <h2 class="rol" data-key="hero-rol">DESARROLLADORA </h2>
       <p class="descripcion" data-key="hero-desc">
         Apasionada por crear experiencias digitales limpias y funcionales.
         Disfruto trabajar en proyectos donde el código, el diseño y 
@@ -62,9 +62,8 @@
   <section id="trabajo">
     <h2 data-key="proj-titulo">Proyectos Principales</h2>
     <div class="fila mis-proyectos">
-
       <div class="tarjeta">
-        <h3><a href="https://www.figma.com/proto/OSNV2s28CnwWsa8psuooGz/MazYummy?node-id=66-868&p=f&t=gPnMlZq0EtC9ZjjF-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=66%3A868" target="_blank" data-key="proj2-titulo">Proyecto de Diseño de Aplicación</a></h3>
+        <h3><a href="https://www.figma.com/proto/OSNV2s28CnwWsa8psuooGz/MazYummy?node-id=66-868" target="_blank" data-key="proj2-titulo">Proyecto de Diseño de Aplicación</a></h3>
         <p data-key="proj2-desc">Diseño de interfaz para una aplicación móvil, enfocado en la usabilidad y la coherencia visual. Se elaboraron todas las pantallas y flujos de navegación mediante Figma.</p>
         <p><strong data-key="proj-tools">Herramientas:</strong> Figma, Jira</p>
       </div>
@@ -80,10 +79,10 @@
   <section id="skills">
     <h2 data-key="skills-titulo">Habilidades Técnicas</h2>
     <div class="fila mis-habilidades">
-      <div class="tarjeta"><h3 data-key="skills-lang-h3">Lenguajes</h3><p data-key="skills-lang-p">C++, Java, Kotlin, HTML, CSS, JavaScript</p></div>
+      <div class="tarjeta"><h3 data-key="skills-lang-h3">Lenguajes</h3><p data-key="skills-lang-p">C<br> Java <br>Kotlin<br> JavaScript <br>CSS<br>HTML</p></div>
       <div class="tarjeta"><h3 data-key="skills-db-h3">Bases de Datos</h3><p data-key="skills-db-p">MySQL</p></div>
-      <div class="tarjeta"><h3 data-key="skills-tools-h3">Herramientas</h3><p data-key="skills-tools-p">GitHub, GitLab, NetBeans, Packet Tracer, Figma, Jira, Trello, Android Studio</p></div>
-      <div class="tarjeta"><h3 data-key="skills-learn-h3">En aprendizaje</h3><p data-key="skills-learn-p">React, Node.js, Python</p></div>
+      <div class="tarjeta"><h3 data-key="skills-tools-h3">Herramientas</h3><p data-key="skills-tools-p">GitHub<br> GitLab<br> NetBeans<br> Packet Tracer <br>Figma<br> Jira <br>Trello<br> Android Studio<br> VS code</p></div>
+      <div class="tarjeta"><h3 data-key="skills-learn-h3">En aprendizaje</h3><p data-key="skills-learn-p">React<br> Node.js<br> Python</p></div>
     </div>
   </section>
 
@@ -93,10 +92,6 @@
       Soy estudiante de <strong> Ingeniería en Tecnologías de la Información e Innovación Digital</strong>, 
       con interés en el desarrollo Front-End y el diseño de interfaces. Me gusta trabajar en proyectos donde el diseño,
       el código y la organización se combinan para crear soluciones claras y funcionales.
-      He participado en proyectos en equipo donde he apoyado en la organización de tareas y la estructuración de ideas, 
-      así como en la definición de soluciones viables, además de contribuir en el diseño y desarrollo de interfaces. 
-      Me considero una persona responsable, detallista y en constante aprendizaje,
-       con el objetivo de seguir creciendo profesionalmente y aportar valor en proyectos reales de software.
     </p>
   </section>
 
@@ -105,7 +100,6 @@
     <div class="fila mis-certificados">
       <div class="tarjeta">
         <h3 data-key="cert-cisco-titulo">Cursos y Certificaciones Cisco</h3>
-        
         <ul class="lista-certificados">
           <li><a href="certificados/Conceptos básicos de redes.pdf" class="link-pdf" data-key="cert-li-1">Introduction to Networks</a></li>
           <li><a href="certificados/Switching, Routing, and Wireless.pdf" class="link-pdf" data-key="cert-li-2">Switching, Routing and Wireless Essentials</a></li>
@@ -118,12 +112,54 @@
     </div>
   </section>
 
-  <footer id="contacto">
+ <section id="contacto">
+  <div class="cabecera-contacto">
+     <h2 class="contactar" data-key="contact-titulo" style="text-align: center; margin-bottom: 2rem;">Hablemos</h2>
+     <p class="texto-contacto" data-key="contact-desc">
+       Abierta a nuevas oportunidades laborales. 
+       Puedes contactarme a través del siguiente formulario o mediante mis redes sociales.
+     </p>
+  </div>
+
+  <div class="contenedor-contacto">
+    <form action="https://formsubmit.co/sarabanuelos17@gmail.com" method="POST">
+      <div class="input-group">
+        <label for="name" data-key="contact-name">Nombre</label>
+        <input type="text" name="name" id="name">
+
+        <label for="phone" data-key="contact-phone">Teléfono</label>
+        <input type="tel" name="phone" id="phone">
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+
+        <label for="message" data-key="contact-msg">Mensaje</label>
+        <textarea name="message" id="message" cols="30" rows="5"></textarea> 
+        <input type="submit" class="btn" data-key="contact-submit" value="Enviar">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+        <input type="hidden" name="_captcha" value="false">
+      </div>
+    </form>
+
+    <div class="enlaces-lateral">
+      <h3 data-key="contact-social" style="color:white; margin-bottom:20px;">Mis Redes</h3>
+      <a href="https://www.linkedin.com/in/sara-banuelos-6b2087387" target="_blank">
+        <img class="icon-img" src="imagenes/icon-linkedin.png" alt="LinkedIn"> LinkedIn
+      </a>
+      <a href="mailto:sarabanuelos17@gmail.com">
+        <img class="icon-img" src="imagenes/icon-gmail.png" alt="Gmail"> Email
+      </a>
+      <a href="https://github.com/sara-bp17" target="_blank">
+        <img class="icon-img" src="imagenes/icon-github.png" alt="GitHub"> GitHub
+      </a>
+    </div>
+  </div>
+</section>
+
+  <footer>
     <p>
       <span data-key="footer-copy">© 2025 Sara Bañuelos ·</span> 
-      <a href="https://www.linkedin.com/in/sara-ba%C3%B1uelos-6b2087387?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" data-key="footer-li">LinkedIn</a> · 
-      <a href="mailto:sara.banuelosp17@gmail.com" data-key="footer-gm">sara.banuelosp17@gmail.com</a> · 
-      <a href="https://gitlab.com/bosspilot/bosspilot.git" target="_blank" data-key="footer-gh">GitHub</a>
+      <a href="mailto:sarabanuelos17@gmail.com">sarabanuelos17@gmail.com</a> 
     </p>
   </footer>
 
